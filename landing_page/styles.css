@@ -22,7 +22,7 @@ body {
     padding-right: 5%;
     box-sizing: border-box;
     position: relative;
-    box-shadow: 3px 8px 22px rgba(94,28,68,0.15);
+    box-shadow: 3px 8px 22px rgba(94,28,68,0.15);    
  }
 
  /* navigation bar  */
@@ -60,7 +60,7 @@ nav ul li a {
 /* content  */
 .content h1{
     font-size: 60px;
-    font-weight: 100;
+    font-weight: 300;
     margin-top: 24px;
     margin-bottom: 15px;
     color: #232d60;
@@ -202,6 +202,22 @@ nav ul li a {
     gap: 1rem;    
 }
 
+/* footer section */
+#footer {
+   padding: 1% 5%;
+   text-align: center;
+   background-color: #E5D4FF;
+}
+
+.social-icon {
+   margin: 20px 10px;
+   color: #7743DB;
+}
+
+.social-icon:hover {
+   color: #ef8172;
+}
+
 
 
 
@@ -300,5 +316,22 @@ nav ul li a {
 
     .text2 {
         padding: 5%;
+    }
+}
+
+ /* *****************************************************
+                    MEDIA QUERIES (SMALL DEVICES)
+***************************************************** */
+/* Media query for screens 768px and smaller */
+@media only screen and (max-width: 768px) {
+    .category__buttons-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Media query for screens 576px and smaller */
+@media only screen and (max-width: 576px) {
+    .category__buttons-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
